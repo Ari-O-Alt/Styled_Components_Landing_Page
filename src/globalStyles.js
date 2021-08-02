@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+// styles applied to all pages
 * {
 box-sizing: border-box;
     margin: 0;
@@ -8,6 +9,7 @@ box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
 }`;
 
+// we create a container that can be styled differently
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
