@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import { Container } from "../../globalStyles";
 
 export const StyledNavBar = styled.nav`
   background-color: #101522;
-  color: #fff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -11,4 +11,11 @@ export const StyledNavBar = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+`;
+
+export const StyledNavBarContainer = styled(Container)`
+  display: flex;
+  justify-content: space-space-between;
+  height: 80px;
+  color: #fff;
 `;
