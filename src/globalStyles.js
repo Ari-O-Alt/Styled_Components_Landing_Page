@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 // styles applied to all pages
 * {
 box-sizing: border-box;
@@ -25,4 +25,4 @@ export const Container = styled.div`
 
 export const StyledButton = styled.button``;
 
-export default GlobalStyle;
+export default GlobalStyles;

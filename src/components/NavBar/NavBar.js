@@ -1,16 +1,23 @@
 import React from "react";
-import { StyledNavBar, StyledNavBarContainer } from "./NavBar.elements";
-import { StyledButton } from "../../globalStyles";
+import {
+  StyledNavBar,
+  StyledNavBarContainer,
+  StyledNavBarLogo,
+  StyledNavBarIcon,
+} from "./NavBar.elements";
 
 const NavBar = () => {
   return (
-    <>
+    <React.Fragment>
       <StyledNavBar>
         <StyledNavBarContainer>
-          <StyledNavBarLogo></StyledNavBarLogo>
+          <StyledNavBarLogo to="/">
+            <StyledNavBarIcon />
+            ULTRA
+          </StyledNavBarLogo>
         </StyledNavBarContainer>
       </StyledNavBar>
-    </>
+    </React.Fragment>
   );
 };
 
