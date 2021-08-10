@@ -40,7 +40,7 @@ export const StyledNavBarIcon = styled(FaMagento)`
 `;
 
 // we style the hamburger menu icon
-export const HamburgerMenuIcon = styled.div`
+export const StyledHamburgerMenuIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 960px) {
