@@ -24,7 +24,6 @@ export const StyledNavBarContainer = styled(Container)`
   color: #fff;
 `;
 // we style the logo
-
 export const StyledNavBarLogo = styled(Link)`
   color: #fff;
   justify-self: flex-start;
@@ -35,6 +34,22 @@ export const StyledNavBarLogo = styled(Link)`
   align-items: center;
 `;
 
+// we style the icon next to the logo (ULTRA text)
 export const StyledNavBarIcon = styled(FaMagento)`
   margin-right: 0.5rem;
+`;
+
+// we style the hamburger menu icon
+export const HamburgerMenuIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 `;
