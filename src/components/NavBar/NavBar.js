@@ -33,6 +33,10 @@ const NavBar = () => {
             <StyledHamburgerMenuIcon onClick={handleIconToggle}>
               {isClicked ? <FaTimes /> : <FaBars />}
             </StyledHamburgerMenuIcon>
+            {/*  ------------------------------------------------------------------------ navbar menu start */}
+            <StyledNavBarMenu>
+              {/*  ------------------------------------------------------------------------ navbar menu start */}
+            </StyledNavBarMenu>
             {/*  ---------------------------------------------------------------------- navbar container end */}
           </StyledNavBarContainer>
           {/*  ----------------------------------------------------------------------------------- navbar end */}

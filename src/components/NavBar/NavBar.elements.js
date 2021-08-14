@@ -53,3 +53,5 @@ export const StyledHamburgerMenuIcon = styled.div`
     cursor: pointer;
   }
 `;
+
+export const StyledNavBarMenu = styled.li``;
