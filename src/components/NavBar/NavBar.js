@@ -35,7 +35,16 @@ const NavBar = () => {
             </StyledHamburgerMenuIcon>
             {/*  ------------------------------------------------------------------------ navbar menu start */}
             <StyledNavBarMenu>
-              {/*  ------------------------------------------------------------------------ navbar menu start */}
+              <StyledNavBarItem>
+                <StyledLink>Home</StyledLink>
+              </StyledNavBarItem>
+              <StyledNavBarItem>
+                <StyledLink>About</StyledLink>
+              </StyledNavBarItem>
+              <StyledNavBarItem>
+                <StyledLink>Contact</StyledLink>
+              </StyledNavBarItem>
+              {/*  ------------------------------------------------------------------------ navbar menu end */}
             </StyledNavBarMenu>
             {/*  ---------------------------------------------------------------------- navbar container end */}
           </StyledNavBarContainer>
