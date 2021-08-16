@@ -73,3 +73,20 @@ export const StyledNavBarMenu = styled.ul`
     background: #101522;
   }
 `;
+
+export const StyledNavBarItem = styled.li`
+  height: 80px;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #4b59f7;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+
+    &:hover {
+      border: none;
+    }
+  }
+`;
