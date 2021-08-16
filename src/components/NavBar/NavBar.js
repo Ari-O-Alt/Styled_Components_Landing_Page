@@ -7,6 +7,9 @@ import {
   StyledNavBarLogo,
   StyledNavBarIcon,
   StyledHamburgerMenuIcon,
+  StyledNavBarMenu,
+  StyledNavBarItem,
+  StyledLink,
 } from "./NavBar.elements";
 
 const NavBar = () => {
@@ -34,17 +37,18 @@ const NavBar = () => {
               {isClicked ? <FaTimes /> : <FaBars />}
             </StyledHamburgerMenuIcon>
             {/*  ------------------------------------------------------------------------ navbar menu start */}
-            <StyledNavBarMenu>
+            <StyledNavBarMenu onClick={handleIconToggle} isClicked={isClicked}>
               <StyledNavBarItem>
-                <StyledLink>Home</StyledLink>
+                <StyledLink to={"/"}>Home</StyledLink>
               </StyledNavBarItem>
+
               <StyledNavBarItem>
-                <StyledLink>About</StyledLink>
+                <StyledLink to={"/about"}>About</StyledLink>
               </StyledNavBarItem>
+
               <StyledNavBarItem>
-                <StyledLink>Contact</StyledLink>
+                <StyledLink to={"/blog"}>Blog</StyledLink>
               </StyledNavBarItem>
-              {/*  ------------------------------------------------------------------------ navbar menu end */}
             </StyledNavBarMenu>
             {/*  ---------------------------------------------------------------------- navbar container end */}
           </StyledNavBarContainer>

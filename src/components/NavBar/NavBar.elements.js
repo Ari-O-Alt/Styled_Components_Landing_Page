@@ -19,7 +19,7 @@ export const StyledNavBar = styled.nav`
 // we style the Container global component
 export const StyledNavBarContainer = styled(Container)`
   display: flex;
-  justify-content: space-space-between;
+  justify-content: space-between;
   height: 80px;
   color: #fff;
 `;
@@ -67,7 +67,7 @@ export const StyledNavBarMenu = styled.ul`
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: ${({ click }) => (click ? 0 : "-100%")};
+    left: ${({ isClicked }) => (isClicked ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #101522;
@@ -87,6 +87,27 @@ export const StyledNavBarItem = styled.li`
 
     &:hover {
       border: none;
+    }
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      color: #4b59f7;
+      transition: all 0.3s ease;
     }
   }
 `;
