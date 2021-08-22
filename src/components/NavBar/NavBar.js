@@ -73,11 +73,13 @@ const NavBar = () => {
                   <StyledNavBtnLink to="/sign-up">
                     <StyledButton primary>SIGN UP</StyledButton>
                   </StyledNavBtnLink>
-                ) : /*  <StyledNavBtnLink to="/sign-up">
+                ) : (
+                  <StyledNavBtnLink to="/sign-up">
                     <StyledButton primary fontBig>
                       SIGN UP
                     </StyledButton>
-                  </StyledNavBtnLink> */ null}
+                  </StyledNavBtnLink>
+                )}
               </StyledNavBarItemBtn>
             </StyledNavBarMenu>
             {/*  ---------------------------------------------------------------------- navbar container end */}
