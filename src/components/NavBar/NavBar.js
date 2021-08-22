@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import { StyledButton } from "../../globalStyles";
 import {
   StyledNavBar,
   StyledNavBarContainer,
@@ -10,6 +11,8 @@ import {
   StyledNavBarMenu,
   StyledNavBarItem,
   StyledLink,
+  StyledNavBarItemBtn,
+  StyledNavBtnLink,
 } from "./NavBar.elements";
 
 const NavBar = () => {
@@ -49,6 +52,20 @@ const NavBar = () => {
               <StyledNavBarItem>
                 <StyledLink to={"/blog"}>Blog</StyledLink>
               </StyledNavBarItem>
+
+              <StyledNavBarItemBtn>
+                {button ? (
+                  <StyledNavBtnLink to="/sign-up">
+                    <StyledButton primary>SIGN UP</StyledButton>
+                  </StyledNavBtnLink>
+                ) : (
+                  <StyledNavBtnLink to="/sign-up">
+                    <StyledButton primary fontBig>
+                      SIGN UP
+                    </StyledButton>
+                  </StyledNavBtnLink>
+                )}
+              </StyledNavBarItemBtn>
             </StyledNavBarMenu>
             {/*  ---------------------------------------------------------------------- navbar container end */}
           </StyledNavBarContainer>

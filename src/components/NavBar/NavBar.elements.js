@@ -54,6 +54,7 @@ export const StyledHamburgerMenuIcon = styled.div`
   }
 `;
 
+// we style the menu (ul) - it's hidden when the hamburger menu icon is not clicked
 export const StyledNavBarMenu = styled.ul`
   display: flex;
   align-items: center;
@@ -74,6 +75,7 @@ export const StyledNavBarMenu = styled.ul`
   }
 `;
 
+// we style each nav bar item (li)
 export const StyledNavBarItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
@@ -91,6 +93,7 @@ export const StyledNavBarItem = styled.li`
   }
 `;
 
+// we style each menu item link
 export const StyledLink = styled(Link)`
   color: #fff;
   display: flex;
@@ -110,4 +113,26 @@ export const StyledLink = styled(Link)`
       transition: all 0.3s ease;
     }
   }
+`;
+
+export const StyledNavBarItemBtn = styled.li`
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+`;
+
+export const StyledNavBtnLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
 `;
