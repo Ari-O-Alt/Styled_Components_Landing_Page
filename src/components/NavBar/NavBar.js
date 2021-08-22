@@ -17,10 +17,25 @@ import {
 
 const NavBar = () => {
   const [isClicked, setIsClicked] = React.useState(false);
+  const [button, setButton] = React.useState(true);
 
   const handleIconToggle = () => {
     setIsClicked(!isClicked);
   };
+
+  const handleShowButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  React.useEffect(() => {
+    handleShowButton();
+  }, []);
+
+  window.addEventListener("resize", handleShowButton);
   return (
     <React.Fragment>
       {/*  ---------------------------------------------------------------------- gives the same styling to all icons */}
@@ -58,13 +73,11 @@ const NavBar = () => {
                   <StyledNavBtnLink to="/sign-up">
                     <StyledButton primary>SIGN UP</StyledButton>
                   </StyledNavBtnLink>
-                ) : (
-                  <StyledNavBtnLink to="/sign-up">
+                ) : /*  <StyledNavBtnLink to="/sign-up">
                     <StyledButton primary fontBig>
                       SIGN UP
                     </StyledButton>
-                  </StyledNavBtnLink>
-                )}
+                  </StyledNavBtnLink> */ null}
               </StyledNavBarItemBtn>
             </StyledNavBarMenu>
             {/*  ---------------------------------------------------------------------- navbar container end */}
