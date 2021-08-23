@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-// styles applied to all pages
+// Global styles
 * {
 box-sizing: border-box;
     margin: 0;
@@ -9,7 +9,9 @@ box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
 }`;
 
-// we create a container that can be styled differently
+/**
+ * Global container
+ */
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
@@ -23,6 +25,9 @@ export const Container = styled.div`
   }
 `;
 
+/**
+ * Global button
+ */
 export const StyledButton = styled.button`
   border-radius: 4px;
   background: ${({ primary }) => (primary ? "#4b59f7" : "#0467fb")};
