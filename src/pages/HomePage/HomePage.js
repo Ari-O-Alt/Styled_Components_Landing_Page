@@ -5,7 +5,7 @@ import { homeObjsOne } from "./Data";
 const HomePage = () => {
   return (
     <React.Fragment>
-      <InfoSection lightBg={homeObjsOne} />
+      <InfoSection styles={homeObjsOne} />
     </React.Fragment>
   );
 };

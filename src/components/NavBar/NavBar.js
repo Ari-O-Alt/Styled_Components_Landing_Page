@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import { StyledButton } from "../../globalStyles";
+import { GlobalStyledButton } from "../../globalStyles";
 import {
   StyledNavBar,
   StyledNavBarContainer,
@@ -71,13 +71,13 @@ const NavBar = () => {
               <StyledNavBarItemBtn>
                 {button ? (
                   <StyledNavBtnLink to="/sign-up">
-                    <StyledButton primary>SIGN UP</StyledButton>
+                    <GlobalStyledButton primary>SIGN UP</GlobalStyledButton>
                   </StyledNavBtnLink>
                 ) : (
                   <StyledNavBtnLink to="/sign-up">
-                    <StyledButton primary fontBig>
+                    <GlobalStyledButton primary fontBig>
                       SIGN UP
-                    </StyledButton>
+                    </GlobalStyledButton>
                   </StyledNavBtnLink>
                 )}
               </StyledNavBarItemBtn>

@@ -1,11 +1,25 @@
 import React from "react";
-import { StyledInfoSection } from "./InfoSection.elements";
+import { GlobalStyledContainer } from "../../globalStyles";
+import {
+  StyledInfoColumn,
+  StyledInfoRow,
+  StyledInfoSection,
+  StyledTextWrapper,
+} from "./InfoSection.elements";
 
 const InfoSection = (props) => {
-  const { lightBg } = props;
+  const { lightBg, imgStart } = props;
   return (
     <React.Fragment>
-      <StyledInfoSection lightBg={lightBg}></StyledInfoSection>
+      <StyledInfoSection lightBg={lightBg}>
+        <GlobalStyledContainer>
+          <StyledInfoRow imgStart={imgStart}>
+            <StyledInfoColumn>
+              <StyledTextWrapper>HOME PAGEEEE</StyledTextWrapper>
+            </StyledInfoColumn>
+          </StyledInfoRow>
+        </GlobalStyledContainer>
+      </StyledInfoSection>
     </React.Fragment>
   );
 };

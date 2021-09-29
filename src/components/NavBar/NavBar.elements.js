@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../globalStyles";
+import { GlobalStyledContainer } from "../../globalStyles";
 import { Link } from "react-router-dom";
 import { FaMagento } from "react-icons/fa";
 
@@ -17,7 +17,7 @@ export const StyledNavBar = styled.nav`
 `;
 
 // we style the Container global component
-export const StyledNavBarContainer = styled(Container)`
+export const StyledNavBarContainer = styled(GlobalStyledContainer)`
   display: flex;
   justify-content: space-between;
   height: 80px;

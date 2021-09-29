@@ -12,7 +12,7 @@ box-sizing: border-box;
 /**
  * Global container
  */
-export const Container = styled.div`
+export const GlobalStyledContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -28,7 +28,7 @@ export const Container = styled.div`
 /**
  * Global button
  */
-export const StyledButton = styled.button`
+export const GlobalStyledButton = styled.button`
   border-radius: 4px;
   background: ${({ primary }) => (primary ? "#4b59f7" : "#0467fb")};
   white-space: nowrap;
